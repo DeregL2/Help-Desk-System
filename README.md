@@ -1,33 +1,31 @@
-🛠️ HelpDesk System
-Um sistema de suporte técnico completo, focado em usabilidade e segurança, desenvolvido com Python (Flask) e SQLAlchemy. O projeto oferece uma interface intuitiva para gestão de chamados e camadas extras de proteção de dados.
+# 🛠️ HelpDesk System
 
-🚀 Principais Funcionalidades
-Gestão de Tickets
-Painel Interativo: Dashboard com atividade recente e visualização rápida do status dos chamados.
+Um sistema moderno de suporte técnico e gerenciamento de chamados desenvolvido com **Python (Flask)**. O projeto foca em oferecer uma interface intuitiva para o usuário final e camadas robustas de segurança para a proteção de dados.
 
-Visualização Dinâmica: Visualização de detalhes do ticket através de modais (pop-ups), evitando recarregamentos desnecessários da página.
+## 🚀 Funcionalidades Principais
 
-Filtros Avançados: Busca por ID, solicitante ou assunto, além de filtros por status (Aberto, Em Andamento, Fechado).
+### **Gestão de Chamados (Tickets)**
+* **Dashboard Dinâmico:** Painel centralizado para visualização de atividades recentes e status do sistema.
+* **Visualização via Modal:** Os detalhes de cada ticket podem ser abertos em janelas flutuantes (modais), permitindo uma navegação rápida sem sair da lista principal.
+* **Organização Profissional:** Lista de tickets com separação por colunas de Assunto, Solicitante, Status e Data de Criação.
+* **Filtros Inteligentes:** Sistema de busca e filtragem por status (Aberto, Em andamento, Fechado).
 
-Segurança de Alto Nível
-Criptografia de Senhas: Utilização da biblioteca bcrypt para garantir que as senhas sejam armazenadas como hashes seguros no banco de dados.
+### **Segurança e Privacidade**
+* **Criptografia com BCrypt:** As senhas dos usuários são transformadas em hashes seguros antes de serem salvas, garantindo que dados sensíveis nunca fiquem expostos.
+* **Autenticação de Dois Fatores (2FA):** Camada extra de segurança que exige um código de 6 dígitos enviado ao e-mail do usuário para validar o acesso.
+* **Validação Rigorosa:** O cadastro exige senhas fortes com letras maiúsculas, minúsculas, números e caracteres especiais.
+* **Conformidade (LGPD):** Inclui box de aceite de termos de uso e política de privacidade no momento do cadastro.
 
-2FA (Autenticação de Dois Fatores): Suporte para autenticação em duas etapas via código de e-mail para maior proteção da conta.
+### **Interface (UI/UX)**
+* **Design Responsivo:** Layout adaptável para dispositivos móveis, tablets e desktops.
+* **Floating Action Button (FAB):** Botão flutuante estilizado para criação rápida de novos tickets.
+* **Zona de Perigo:** Área específica para exclusão de conta com confirmação por senha para evitar ações acidentais.
 
-Políticas de Privacidade: Cadastro condicionado ao aceite dos termos de uso e política de privacidade.
+---
 
-Interface e Experiência do Usuário
-Design Responsivo: Interface que se adapta perfeitamente a dispositivos móveis e desktops.
+## 💻 Tecnologias Utilizadas
 
-Componentes Modernos: Uso de Floating Action Buttons (FAB), interruptores (switches) para configurações e barras de progresso.
-
-🛠️ Tecnologias Utilizadas
-Linguagem: Python
-
-Framework Web: Flask
-
-Banco de Dados: SQLAlchemy (ORM)
-
-Segurança: BCrypt (Hashing)
-
-Frontend: HTML5, CSS3 (Flexbox/Grid), JavaScript
+* **Backend:** Python com Framework Flask.
+* **Banco de Dados:** SQLAlchemy (ORM) para manipulação de dados de usuários e tickets.
+* **Frontend:** HTML5, CSS3 moderno (Flexbox e Grid) e JavaScript puro.
+* **Segurança:** Biblioteca `bcrypt` para hashing de senhas.
